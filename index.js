@@ -5,6 +5,12 @@ const express = require('express')
 const app = express()
 
 app.use(express.json() )
+// app.use(express.urlencoded())
+app.use('/register', register)
+app.use('/login', login)
+app.set('view-engin', 'ejs')
+
+
 app.get('/', (req, res)=>{
     res.send('Hello world')
 })
