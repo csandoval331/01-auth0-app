@@ -1,12 +1,19 @@
 require('dotenv').config()
 const PORT = process.env.PORT
 const express = require('express')
-
+const register = require('./routes/register')
+const login = require('./routes/login')
 const app = express()
 
 app.use(express.json() )
+// app.use(express.urlencoded())
+app.use('/register', register)
+app.use('/login', login)
+app.set('view-engin', 'ejs')
+
+
 app.get('/', (req, res)=>{
-    res.send('Hello world')
+    res.render('index.ejs', {name: 'Carlos'})
 })
 
 app.post('/:msg', (req, res)=>{
