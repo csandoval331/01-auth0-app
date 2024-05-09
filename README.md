@@ -6,5 +6,6 @@
 ```
 
 # Notes
+- [Youtube tutorial by webDevSimplified](https://www.youtube.com/watch?v=-RCnNyD0L-s)
 - [The Express API documentation - should read!](https://expressjs.com/en/4x/api.html)
 - [Understanding purpose of package-lock.json](https://stackoverflow.com/questions/44297803/what-is-the-role-of-the-package-lock-json)
