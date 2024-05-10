@@ -26,6 +26,7 @@ initializePassport(passport, email => {
     }
 )
 
+//created temporary user for testing
 // const myPassword = bcrypt.hash('carlos', 10)
 bcrypt.hash('carlos', 10).then((hashedPassword)=>{
     app.locals.users = [{id:Date.now().toString(), name:'carlos', email: 'carlos', password: hashedPassword}]
@@ -67,8 +68,8 @@ app.post('/:msg', (req, res)=>{
 })
 
 app.delete('/logout', (req,res)=>{
-    req.logOut(err => {
-        if(err){return next(err)}
+    req.logout(err => {
+        if(err){return next(err) }
         return res.redirect('/login')
     })
 })
