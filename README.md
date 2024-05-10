@@ -25,6 +25,8 @@
 
 # Notes
 - [Youtube tutorial by WebDevSimplified](https://youtu.be/-RCnNyD0L-s)
+- [Another youtube vid about passport-local](https://www.youtube.com/watch?v=_lZUq39FGv0)
+- [Example of passport-local login from github](https://github.com/passport/todos-express-password)
 - [Next Youtube project -  Passing Data Between Frontend and Backend | Node.js ](https://www.youtube.com/watch?v=5TxF9PQaq4U)
 - [The Express API documentation - should read!](https://expressjs.com/en/4x/api.html)
 - [Understanding purpose of package-lock.json](https://stackoverflow.com/questions/44297803/what-is-the-role-of-the-package-lock-json)
